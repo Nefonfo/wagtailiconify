@@ -39,6 +39,7 @@ setup(
     version=__version__,
     description='A plugin for Wagtail CMS, icon blocks (fontawesome)',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Nefonfo',
     author_email='victorarmenta30@gmail.com',
     url='https://github.com/Nefonfo/wagtailiconify',
