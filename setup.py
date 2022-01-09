@@ -5,7 +5,6 @@ from wagtailiconify import __version__
 
 class NPMInstall(build):
     def run(self):
-        print('puta madreee')
         self.run_command("npm install")
         self.run_command("npm build")
         build.run(self)
