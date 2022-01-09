@@ -1,0 +1,27 @@
+{
+  "name": "wagtailiconify",
+  "version": "1.0.0",
+  "description": "An implementation of fontawesome for Wagtail CMS",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "builddev": "webpack --mode development"
+  },
+  "keywords": [
+    "wagtail",
+    "fontawesome"
+  ],
+  "author": "Nefonfo",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}
