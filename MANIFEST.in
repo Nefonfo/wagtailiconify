@@ -1,0 +1,3 @@
+recursive-include wagtailiconify/static *
+recursive-include wagtailiconify/templates *
+recursive-include wagtailiconify/templatetags *
