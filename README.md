@@ -2,10 +2,13 @@
 
 Library developed for **Wagtail CMS**, its purpose is to provide icon blocks from various libraries
 
-[![Code style: black](https://img.shields.io/badge/code%20style-black-black?style=for-the-badge)](https://github.com/psf/black)
+![PyPI - License](https://img.shields.io/pypi/l/wagtailiconify?style=for-the-badge)
+![PyPI](https://img.shields.io/pypi/v/wagtailiconify?style=for-the-badge)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wagtailiconify?style=for-the-badge)
 ![PyPI - Django Version](https://img.shields.io/pypi/djversions/wagtail?style=for-the-badge) 
 ![Status](https://img.shields.io/badge/Status-alpha-orange?style=for-the-badge)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-black?style=for-the-badge)](https://github.com/psf/black)
+
 ---
 <br/>
 
