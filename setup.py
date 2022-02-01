@@ -10,16 +10,17 @@ import subprocess
 from wagtailiconify import __version__
 
 
-with open('README.md', 'r') as readme:
+with open("README.md", "r") as readme:
     long_description = readme.read()
+
 
 class assets_mixin:
     def compile_assets(self):
         try:
-            subprocess.check_call(['npm', 'install'])
-            subprocess.check_call(['npm', 'run', 'build'])
+            subprocess.check_call(["npm", "install"])
+            subprocess.check_call(["npm", "run", "build"])
         except (OSError, subprocess.CalledProcessError) as e:
-            print('Error compiling assets: ' + str(e))
+            print("Error compiling assets: " + str(e))
             raise SystemExit(1)
 
 
@@ -34,16 +35,17 @@ class bdist_egg(base_bdist_egg, assets_mixin):
         self.compile_assets()
         base_bdist_egg.run(self)
 
+
 setup(
-    name='wagtailiconify',
+    name="wagtailiconify",
     version=__version__,
-    description='A plugin for Wagtail CMS, icon blocks (fontawesome)',
+    description="A plugin for Wagtail CMS, icon blocks (fontawesome)",
     long_description=long_description,
-    long_description_content_type='text/markdown',
-    author='Nefonfo',
-    author_email='victorarmenta30@gmail.com',
-    url='https://github.com/Nefonfo/wagtailiconify',
-    license='MIT',
+    long_description_content_type="text/markdown",
+    author="Nefonfo",
+    author_email="victorarmenta30@gmail.com",
+    url="https://github.com/Nefonfo/wagtailiconify",
+    license="MIT",
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
@@ -51,10 +53,10 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        'Topic :: Internet :: WWW/HTTP',
+        "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
-    keywords=['development', 'django', 'wagtail'],
+    keywords=["development", "django", "wagtail"],
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -62,7 +64,7 @@ setup(
         "Django>=3.2.0",
     ],
     cmdclass={
-        'sdist': sdist,
-        'bdist_egg': bdist_egg,
+        "sdist": sdist,
+        "bdist_egg": bdist_egg,
     },
 )

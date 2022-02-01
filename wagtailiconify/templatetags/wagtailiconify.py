@@ -7,9 +7,7 @@ register = template.Library()
 
 @register.simple_tag()
 def fontawesome_css():
-    css_file = 'wagtailiconify_fontawesome.min.css'
-    href = f'{settings.STATIC_URL}wagtailiconify/css/{css_file}'
+    css_file = "wagtailiconify_fontawesome.min.css"
+    href = f"{settings.STATIC_URL}wagtailiconify/css/{css_file}"
 
-    return format_html(
-        mark_safe(f'<link rel="stylesheet" href="{href}">')
-    )
+    return format_html(mark_safe(f'<link rel="stylesheet" href="{href}">'))
